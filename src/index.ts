@@ -5,8 +5,10 @@
  * microfrontend.
  */
 
-import { getAsyncLifecycle, defineConfigSchema } from "@openmrs/esm-framework";
+import { getAsyncLifecycle, defineConfigSchema, provide } from "@openmrs/esm-framework";
 import { configSchema } from "./config-schema";
+import nmrsConfig from './nmrs-config.json';
+import nmrsLogoConfig from "./nmrs-logo-config";
 
 /**
  * This tells the app shell the version of this app. We inject this variable
@@ -54,7 +56,7 @@ const backendDependencies = {
  * `/openmrs/spa/hello`.
  */
 function setupOpenMRS() {
-  const moduleName = "@openmrs/esm-template-app";
+  const moduleName = "@nmrs/esm-nmrs-app";
 
   const options = {
     featureName: "hello-world",
@@ -62,6 +64,9 @@ function setupOpenMRS() {
   };
 
   defineConfigSchema(moduleName, configSchema);
+
+  provide(nmrsConfig);
+  provide(nmrsLogoConfig);
 
   return {
     pages: [

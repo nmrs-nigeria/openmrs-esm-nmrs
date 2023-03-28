@@ -1,18 +1,8 @@
-![Node.js CI](https://github.com/openmrs/openmrs-esm-template-app/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/nmrs-nigeria/openmrs-esm-nmrs/workflows/Node.js%20CI/badge.svg)
 
-# OpenMRS ESM NMRS
+# NMRS ESM
 
-This repository provides a starting point for creating your own
-[OpenMRS Microfrontend](https://wiki.openmrs.org/display/projects/OpenMRS+3.0%3A+A+Frontend+Framework+that+enables+collaboration+and+better+User+Experience).
-
-For more information, please see the
-[OpenMRS Frontend Developer Documentation](https://openmrs.github.io/openmrs-esm-core/#/).
-
-In particular, the [Setup](https://openmrs.github.io/openmrs-esm-core/#/getting_started/setup)
-section can help you get started developing microfrontends in general. The
-[Creating a microfrontend](https://openmrs.github.io/openmrs-esm-core/#/main/creating_a_microfrontend)
-section provides information about how to use this repository to create your
-own microfrontend.
+Nigeria Medical Records System based of OpenMRS 3.x
 
 ## Running this code
 
@@ -45,10 +35,4 @@ should open with the OpenMRS 3 application. Log in and then navigate to
 1. Delete the contents of this README and write a short explanation of what
   you intend to build. Links to planning or design documents can be very helpful.
 
-At this point, you should be able to write your first page as a React application.
 
-Check out the [Module Management app](https://github.com/openmrs/openmrs-esm-module-management-app) for an example of a non-trivial app built using the template.
-
-## Integrating it into your application
-
-Please see [Creating a Microfrontend](https://openmrs.github.io/openmrs-esm-core/#/main/creating_a_microfrontend).
