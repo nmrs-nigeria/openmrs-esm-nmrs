@@ -1,4 +1,4 @@
-name: NMRS CI
+name: Nodejs CI
 
 on:
   push:
