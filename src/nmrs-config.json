@@ -3,5 +3,32 @@
         "Brand color #1": "#008751",
         "Brand color #2": "#008751",
         "Brand color #3": "#008751"
+    },
+    "@openmrs/esm-patient-chart": {
+        "extensionSlots": {
+            "patient-chart-dashboard-slot": {
+                "remove": [
+                    "cervical-cancer",
+                    "allergies-summary-dashboard",
+                    "attachments-results-summary-dashboard",
+                    "conditions-summary-dashboard",
+                    "offline-tools-patient-chart-actions-dashboard-link",
+                    "results-summary-dashboard",
+                    "test-results-summary-dashboard",
+                    "ohri-hiv-prevention",
+                    "ohri-hiv-care-and-treatment"
+                ]
+            }
+        }
+    },
+    "@ohri/openmrs-esm-ohri-covid-app": {
+        "extensionSlots": {
+            "ohri-covid-patient-chart-slot": {
+                "remove": [
+                    "covid-assessments-dashboard",
+                    "covid-lab-results"
+                ]
+            }
+        }
     }
 }
