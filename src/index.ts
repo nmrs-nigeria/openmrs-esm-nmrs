@@ -1,9 +1,12 @@
+import { createConditionalDashboardLink } from "@ohri/openmrs-esm-ohri-commons-lib";
 import {
   getAsyncLifecycle,
   defineConfigSchema,
   provide,
+  getSyncLifecycle,
 } from "@openmrs/esm-framework";
 import { configSchema } from "./config-schema";
+import { dailyMonitoringOfContact_dashboardMeta } from "./dashboardMeta";
 import nmrsConfig from "./nmrs-config.json";
 import nmrsLogoConfig from "./nmrs-logo-config";
 
@@ -22,9 +25,9 @@ const backendDependencies = {
   "webservices.rest": "^2.2.0",
 };
 
-function setupOpenMRS() {
-  const moduleName = "@nmrs/esm-nmrs-app";
+export const moduleName = "@nmrs/esm-nmrs-app";
 
+function setupOpenMRS() {
   const options = {
     featureName: "hello-world",
     moduleName,
@@ -38,6 +41,19 @@ function setupOpenMRS() {
   return {
     pages: [],
     extensions: [
+      {
+        id: "daily-monitoring-dashboard",
+        slot: "daily-monitoring-slot",
+        load: getSyncLifecycle(
+          createConditionalDashboardLink(
+            dailyMonitoringOfContact_dashboardMeta
+          ),
+          options
+        ),
+        meta: dailyMonitoringOfContact_dashboardMeta,
+        online: true,
+        offline: true,
+      },
       // {
       //   name: "Red box",
       //   load: getAsyncLifecycle(

@@ -43,7 +43,8 @@
     "url": "https://github.com/nmrs-nigeria/openmrs-esm-nmrs/issues"
   },
   "dependencies": {
-    "@carbon/react": "^1.14.0",
+    "@carbon/react": "^1.25.0",
+    "@ohri/openmrs-esm-ohri-commons-lib": "^1.0.7",
     "lodash-es": "^4.17.15"
   },
   "peerDependencies": {
