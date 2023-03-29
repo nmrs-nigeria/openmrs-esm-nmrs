@@ -1,0 +1,367 @@
+{
+  "name": "Case Investigation Form",
+  "description": "Case Investigation Form",
+  "version": "2",
+  "published": true,
+  "retired": false,
+  "encounter": "Covid19 Case Investigation",
+  "pages": [
+    {
+      "label": "COVID Investigation",
+      "sections": [
+        {
+          "label": "Patient Symptoms ",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Fever (>=38 degrees Celcius) or history of fever",
+              "type": "obs",
+              "required": false,
+              "id": "feverPresent",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "162871AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "162871"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  },
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Sore throat",
+              "type": "obs",
+              "required": false,
+              "id": "soreThroat",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "162871AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "162871"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  },
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Running nose",
+              "type": "obs",
+              "required": false,
+              "id": "runningNose",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "162871AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "162871"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  },
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Cough",
+              "type": "obs",
+              "required": false,
+              "id": "coughSymptoms",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "162871AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "162871"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  },
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  }
+                ]
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Vaccine History",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Vaccinated",
+              "type": "obs",
+              "required": false,
+              "id": "clientVaccinated",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "162871AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "162871"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  },
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Vaccine Dose",
+              "type": "obs",
+              "required": false,
+              "id": "vaccineDose",
+              "questionOptions": {
+                "rendering": "Checkbox",
+                "concept": "97bf47f9-0ba7-4d00-99bd-8939cd586072",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "OCT",
+                    "value": "COVIDDose"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "166074AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "First"
+                  },
+                  {
+                    "concept": "166075AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Second"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Vaccine name",
+              "type": "obs",
+              "required": false,
+              "id": "vaccineName",
+              "questionOptions": {
+                "rendering": "text",
+                "concept": "161011AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "161011"
+                  }
+                ],
+                "answers": []
+              },
+              "validators": []
+            },
+            {
+              "label": "Vaccination Date",
+              "type": "obs",
+              "required": false,
+              "id": "vaccination Date",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "1410AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "1410"
+                  }
+                ],
+                "answers": []
+              },
+              "validators": []
+            }
+          ]
+        },
+        {
+          "label": "Initial Sample Collection",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date respiratory sample collected",
+              "type": "obs",
+              "required": false,
+              "id": "sampleCollectionDate",
+              "questionOptions": {
+                "rendering": "date",
+                "concept": "159951AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "org.openmrs.module.mdrtb",
+                    "value": "SPUTUM COLLECTION DATE"
+                  }
+                ],
+                "answers": []
+              },
+              "validators": []
+            },
+            {
+              "label": "Type of respiratory sample",
+              "type": "obs",
+              "required": false,
+              "id": "typeRespiratorySample",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "ae127f82-1861-4165-ac81-8554e5a3aac4",
+                "conceptMappings": [],
+                "answers": [
+                  {
+                    "concept": "163363AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Nasal swab specimen"
+                  },
+                  {
+                    "concept": "163364AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Nasopharyngeal swab"
+                  },
+                  {
+                    "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Other non-coded"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Baseline serum been taken",
+              "type": "obs",
+              "required": false,
+              "id": "baselineSerum",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "162871AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "162871"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  },
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  },
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  }
+                ]
+              },
+              "validators": []
+            },
+            {
+              "label": "Other samples collected",
+              "type": "obs",
+              "required": false,
+              "id": "otherSamples",
+              "questionOptions": {
+                "rendering": "radio",
+                "concept": "162871AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "conceptMappings": [
+                  {
+                    "relationship": "SAME-AS",
+                    "type": "CIEL",
+                    "value": "162871"
+                  }
+                ],
+                "answers": [
+                  {
+                    "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Unknown"
+                  },
+                  {
+                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "No"
+                  },
+                  {
+                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "label": "Yes"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Exposure 14 days before onset of illness",
+          "isExpanded": "true",
+          "questions": []
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "encounterType": "0a573847-276b-4a39-80f2-c3463b1716b0",
+  "referencedForms": [],
+  "uuid": "9b93a6e5-eaad-48f5-ae87-555a71bc8950"
+}
