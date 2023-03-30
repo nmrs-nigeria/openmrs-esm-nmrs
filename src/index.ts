@@ -10,11 +10,16 @@ import nmrsLogoConfig from "./nmrs-logo-config";
 import {
   CaseInvestigationMeta,
   ContactInvestigationMeta,
+  CovidCasesSummaryMeta,
   DailyMonitoringOfContactMeta,
 } from "./dashboard.meta";
 import { createDashboardLink } from "@openmrs/esm-patient-common-lib";
 import { addToBaseFormsRegistry } from "@ohri/openmrs-ohri-form-engine-lib";
 import nmrsForms from "./forms/forms-registry";
+import {
+  OHRIHome,
+  createOHRIDashboardLink,
+} from "@ohri/openmrs-esm-ohri-commons-lib";
 
 declare var __VERSION__: string;
 const version = __VERSION__;
@@ -110,6 +115,26 @@ function setupOpenMRS() {
             moduleName,
           }
         ),
+      },
+      {
+        id: "covid-cases-summary-ext",
+        slot: "ohri-covid-dashboard-slot",
+        load: getSyncLifecycle(
+          createOHRIDashboardLink(CovidCasesSummaryMeta),
+          options
+        ),
+        meta: CovidCasesSummaryMeta,
+      },
+      {
+        id: "covid-cases-summary",
+        slot: "covid-cases-summary-slot",
+        load: getSyncLifecycle(OHRIHome, {
+          featureName: "Covid Cases Summary",
+          moduleName,
+        }),
+        meta: CovidCasesSummaryMeta,
+        online: true,
+        offline: true,
       },
     ],
   };
