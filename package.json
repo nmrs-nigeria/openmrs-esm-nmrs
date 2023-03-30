@@ -1,6 +1,6 @@
 {
   "name": "@nmrs/esm-nmrs-app",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "license": "MPL-2.0",
   "description": "A microfrontend for Nigeria Medical Records System built on OpenMRS 3.x",
   "browser": "dist/esm-nmrs-app.js",
