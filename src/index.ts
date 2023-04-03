@@ -18,6 +18,7 @@ import { addToBaseFormsRegistry } from "@ohri/openmrs-ohri-form-engine-lib";
 import nmrsForms from "./forms/forms-registry";
 import {
   OHRIHome,
+  OHRIWelcomeSection,
   createOHRIDashboardLink,
 } from "@ohri/openmrs-esm-ohri-commons-lib";
 
@@ -135,6 +136,37 @@ function setupOpenMRS() {
         meta: CovidCasesSummaryMeta,
         online: true,
         offline: true,
+      },
+      {
+        id: "covid-cases-summary-home-header-ext",
+        slot: "covid-cases-summary-home-header-slot",
+        load: getSyncLifecycle(OHRIWelcomeSection, {
+          featureName: "covid-cases-summary-home-header",
+          moduleName,
+        }),
+        meta: { title: "Covid Cases Summary" },
+      },
+      {
+        id: "covid-cases-summary-home-tile-ext",
+        slot: "covid-cases-summary-home-tiles-slot",
+        load: getAsyncLifecycle(
+          () => import("./views/dashboard/covid-cases-tiles"),
+          {
+            featureName: "covid-cases-summary-home-tiles",
+            moduleName,
+          }
+        ),
+      },
+      {
+        id: "covid-cases-summary-tabs-ext",
+        slot: "covid-cases-summary-home-tabs-slot",
+        load: getAsyncLifecycle(
+          () => import("./views/dashboard/covid-cases-summary"),
+          {
+            featureName: "covid-cases-summary-tabs",
+            moduleName,
+          }
+        ),
       },
     ],
   };

@@ -23,7 +23,7 @@ export const CovidCasesSummaryMeta = {
     columns: 1,
     type: "grid",
     programme: "covid-cases-summary",
-    dashboardTitle: "Cases Summary",
+    dashboardTitle: "COVID-19 Cases Summary",
   },
   title: "Cases Summary",
 };

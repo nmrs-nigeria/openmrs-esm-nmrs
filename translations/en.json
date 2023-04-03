@@ -1,4 +1,24 @@
 {
-  "casualGreeting": "hey",
-  "formalGreeting": "hello"
+  "actions": "Actions",
+  "add": "Add",
+  "caseInvestigation": "Case investigation",
+  "chestPain": "Chest pain",
+  "confirmedCases": "Confirmed cases",
+  "contactInvestigation": "Contact investigation",
+  "cough": "Cough",
+  "editForm": "Edit form",
+  "epiSummary": "Epi summary",
+  "epiCharts": "Epi charts",
+  "fever": "Fever",
+  "geoMapping": "Geo mapping",
+  "headache": "Headache",
+  "nameOfDataCollector": "Name of data collector",
+  "nausea": "Nausea",
+  "probableCases": "Probable cases",
+  "previouslyVaccinated": "Previously vaccinated",
+  "viewDetails": "View details",
+  "suspectedCases": "Suspected cases",
+  "statusOfContact": "Status of contact",
+  "totalCases": "Total cases",
+  "totalDeaths": "Total deaths"
 }
