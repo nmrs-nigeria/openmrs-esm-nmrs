@@ -1,0 +1,868 @@
+{
+    "name":"Covid19 Dail Case Symptoms Monitoring Form",
+    "description":"Covid19 Daily Case Symptoms Monitoring Form",
+    "version":"2",
+    "published":true,
+    "pages":[
+       {
+          "label":"Daily Monitoring of contact symptoms",
+          "sections":[
+             {
+                "label":"Symptoms",
+                "isExpanded":"true",
+                "questions":[
+                   {
+                      "id":"dailysymptoms",
+                      "label":"Daily Monitoring of contact symptoms",
+                      "type":"obsGroup",
+                      "questionOptions":{
+                         "rendering":"repeating",
+                         "concept":"5541215c-18cf-4fb2-b9a6-860b141ae1ed"
+                      },
+                      "behaviours":[
+                         {
+                            "intent":"*",
+                            "required":"false",
+                            "unspecified":"false",
+                            "hide":{
+                               "hideWhenExpression":""
+                            },
+                            "validators":[
+                               
+                            ]
+                         }
+                      ],
+                      "questions":[
+                         {
+                            "label":"Day's",
+                            "type":"obs",
+                            "questionOptions":{
+                               "rendering":"number",
+                               "concept":"1587AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                            },
+                            "id":"monitoring_days",
+                            "behaviours":[
+                               {
+                                  "intent":"*",
+                                  "required":"true",
+                                  "unspecified":"true",
+                                  "hide":{
+                                     "hideWhenExpression":""
+                                  },
+                                  "validators":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "label":"No signs or symptoms of disease",
+                            "type":"obs",
+                            "questionOptions":{
+                               "rendering":"checkbox",
+                               "concept":"1660AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                               "answers":[
+                                  {
+                                     "concept":"1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Yes",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373066001"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1065"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1065"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"No",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1066"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373067005"
+                                        }
+                                     ]
+                                  }
+                               ]
+                            },
+                            "id":"signs_of_disease",
+                            "behaviours":[
+                               {
+                                  "intent":"*",
+                                  "required":"true",
+                                  "unspecified":"true",
+                                  "hide":{
+                                     "hideWhenExpression":""
+                                  }
+                               }
+                            ]
+                         },
+                         {
+                            "label":"Fever",
+                            "type":"obs",
+                            "questionOptions":{
+                               "rendering":"select",
+                               "concept":"140238AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                               "answers":[
+                                  {
+                                     "concept":"1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Yes",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373066001"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1065"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1065"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"No",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1066"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373067005"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Unknown",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 261665006"
+                                        },
+                                        {
+                                           "type":"PIH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"org.openmrs.module.mdrtb",
+                                           "value":"UNKNOWN"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1067"
+                                        }
+                                     ]
+                                  }
+                               ]
+                            },
+                            "id":"monitoring_fever",
+                            "behaviours":[
+                               {
+                                  "intent":"*",
+                                  "required":"true",
+                                  "hide":{
+                                     "hideWhenExpression":""
+                                  },
+                                  "validators":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "label":"Sore throat",
+                            "type":"obs",
+                            "questionOptions":{
+                               "rendering":"select",
+                               "concept":"158843AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                               "answers":[
+                                  {
+                                     "concept":"1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Yes",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373066001"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1065"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1065"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"No",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1066"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373067005"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Unknown",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 261665006"
+                                        },
+                                        {
+                                           "type":"PIH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"org.openmrs.module.mdrtb",
+                                           "value":"UNKNOWN"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1067"
+                                        }
+                                     ]
+                                  }
+                               ]
+                            },
+                            "id":"monitoring_soreThroat",
+                            "behaviours":[
+                               {
+                                  "intent":"*",
+                                  "required":"true",
+                                  "hide":{
+                                     "hideWhenExpression":""
+                                  },
+                                  "validators":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "label":"Cough",
+                            "type":"obs",
+                            "questionOptions":{
+                               "rendering":"select",
+                               "concept":"143264AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                               "answers":[
+                                  {
+                                     "concept":"1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Yes",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373066001"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1065"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1065"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"No",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1066"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373067005"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Unknown",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 261665006"
+                                        },
+                                        {
+                                           "type":"PIH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"org.openmrs.module.mdrtb",
+                                           "value":"UNKNOWN"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1067"
+                                        }
+                                     ]
+                                  }
+                               ]
+                            },
+                            "id":"monitoring_cough",
+                            "behaviours":[
+                               {
+                                  "intent":"*",
+                                  "required":"true",
+                                  "hide":{
+                                     "hideWhenExpression":""
+                                  },
+                                  "validators":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "label":"Shortness of breath",
+                            "type":"obs",
+                            "questionOptions":{
+                               "rendering":"select",
+                               "concept":"141600AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                               "answers":[
+                                  {
+                                     "concept":"1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Yes",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373066001"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1065"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1065"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"No",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1066"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373067005"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Unknown",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 261665006"
+                                        },
+                                        {
+                                           "type":"PIH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"org.openmrs.module.mdrtb",
+                                           "value":"UNKNOWN"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1067"
+                                        }
+                                     ]
+                                  }
+                               ]
+                            },
+                            "id":"monitoring_shortnessofbreath",
+                            "behaviours":[
+                               {
+                                  "intent":"*",
+                                  "required":"true",
+                                  "hide":{
+                                     "hideWhenExpression":""
+                                  },
+                                  "validators":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "label":"RHINITIS",
+                            "type":"obs",
+                            "id":"monitoring_RHINITIS",
+                            "questionOptions":{
+                               "concept":"113224AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                               "rendering":"select",
+                               "answers":[
+                                  {
+                                     "concept":"1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Yes",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373066001"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1065"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1065"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"No",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1066"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373067005"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Unknown",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 261665006"
+                                        },
+                                        {
+                                           "type":"PIH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"org.openmrs.module.mdrtb",
+                                           "value":"UNKNOWN"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1067"
+                                        }
+                                     ]
+                                  }
+                               ]
+                            },
+                            "behaviours":[
+                               {
+                                  "intent":"*",
+                                  "required":"true",
+                                  "unspecified":"true",
+                                  "hide":{
+                                     "hideWhenExpression":""
+                                  }
+                               }
+                            ]
+                         },
+                         {
+                            "label":"oss of Sense of Smell",
+                            "type":"obs",
+                            "questionOptions":{
+                               "rendering":"select",
+                               "concept":"135589AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                               "answers":[
+                                  {
+                                     "concept":"1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Yes",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373066001"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1065"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1065"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"No",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1066"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373067005"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Unknown",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 261665006"
+                                        },
+                                        {
+                                           "type":"PIH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"org.openmrs.module.mdrtb",
+                                           "value":"UNKNOWN"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1067"
+                                        }
+                                     ]
+                                  }
+                               ]
+                            },
+                            "id":"monitoring_lossOfSmell",
+                            "behaviours":[
+                               {
+                                  "intent":"*",
+                                  "required":"true",
+                                  "unspecified":"true",
+                                  "hide":{
+                                     "hideWhenExpression":""
+                                  },
+                                  "validators":[
+                                     {
+                                        "type":"",
+                                        "allowFutureDates":""
+                                     },
+                                     {
+                                        "type":"js_expression",
+                                        "failsWhenExpression":""
+                                     }
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "label":"Taste Disorder",
+                            "type":"obs",
+                            "id":"monitoring_tastesDisorder",
+                            "questionOptions":{
+                               "concept":"118998AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                               "rendering":"select",
+                               "answers":[
+                                  {
+                                     "concept":"1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Yes",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373066001"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1065"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1065"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1065"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"No",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"PIH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"PIH Malawi",
+                                           "value":"Malawi: 1066"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1066"
+                                        },
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 373067005"
+                                        }
+                                     ]
+                                  },
+                                  {
+                                     "concept":"1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                                     "label":"Unknown",
+                                     "conceptMappings":[
+                                        {
+                                           "type":"SNOMED CT",
+                                           "value":"CT: 261665006"
+                                        },
+                                        {
+                                           "type":"PIH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"org.openmrs.module.mdrtb",
+                                           "value":"UNKNOWN"
+                                        },
+                                        {
+                                           "type":"AMPATH",
+                                           "value":"1067"
+                                        },
+                                        {
+                                           "type":"CIEL",
+                                           "value":"1067"
+                                        }
+                                     ]
+                                  }
+                               ]
+                            },
+                            "behaviours":[
+                               {
+                                  "intent":"*",
+                                  "required":"true",
+                                  "hide":{
+                                     "hideWhenExpression":""
+                                  },
+                                  "validators":[
+                                     {
+                                        "type":"js_expression",
+                                        "failsWhenExpression":"",
+                                        "message":""
+                                     }
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "label":"Other Symptoms Specified",
+                            "id":"monitoring_otherSymptoms",
+                            "questionOptions":{
+                               "rendering":"text",
+                               "concept":"48a56177-8d82-4d5d-91da-263ec14d7931"
+                            },
+                            "type":"obs"
+                         }
+                      ]
+                   }
+                ]
+             }
+          ]
+       }
+    ],
+    "processor":"EncounterFormProcessor",
+    "uuid":"368b99cb-ac17-4d4a-b4db-7bd6a83e72f0",
+    "encounterType":"25290479-371b-47f8-9ddd-4b87f7c62be2",
+    "referencedForms":[]
+ }
