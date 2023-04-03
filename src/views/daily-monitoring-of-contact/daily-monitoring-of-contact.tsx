@@ -9,7 +9,7 @@ const DailyMonitoringOfContact: React.FC<PatientChartProps> = ({
 }) => {
   const title = "Daily Monitoring of Contact";
 
-  return <EmptyStateComingSoon headerTitle={title} />;
+  return <EmptyStateComingSoon headerTitle={title} displayText={title} />;
 };
 
 export default DailyMonitoringOfContact;

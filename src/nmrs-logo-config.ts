@@ -1,5 +1,5 @@
-import nmrsLogo from "./images/logo.png";
 import nmrsLogoSmall from "./images/nmrs-logo-sm.png";
+import nmrsLogoWide from "./images/nmrs-logo-wide.png";
 
 export default {
   "@openmrs/esm-login-app": {
@@ -9,7 +9,7 @@ export default {
   },
   "@openmrs/esm-primary-navigation-app": {
     logo: {
-      src: nmrsLogoSmall,
+      src: nmrsLogoWide,
     },
   },
 };

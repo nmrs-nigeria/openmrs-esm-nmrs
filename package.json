@@ -1,13 +1,13 @@
 {
   "name": "@nmrs/esm-nmrs-app",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MPL-2.0",
   "description": "A microfrontend for Nigeria Medical Records System built on OpenMRS 3.x",
   "browser": "dist/esm-nmrs-app.js",
   "main": "src/index.ts",
   "source": true,
   "scripts": {
-    "start": "openmrs develop --backend https://ohri-demo.globalhealthapp.net",
+    "start": "openmrs develop --backend https://nmrsstaging.phis3project.org.ng",
     "serve": "webpack serve --mode=development",
     "build": "webpack --mode production",
     "analyze": "webpack --mode=production --env analyze=true",

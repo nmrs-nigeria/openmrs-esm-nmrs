@@ -11,7 +11,7 @@ import { moduleName } from "../..";
 
 const CaseInvestigation: React.FC<PatientChartProps> = ({ patientUuid }) => {
   const { t } = useTranslation();
-  const title = t("caseInvestigation", "Case Investigation");
+  const title = t("caseInvestigation", "Case investigation");
 
   const columns: EncounterListColumn[] = useMemo(
     () => [
