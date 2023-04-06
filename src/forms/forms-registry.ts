@@ -1,5 +1,6 @@
 import case_investigation from "./covid/case-investigation.json";
 import daily_monitoring from "./covid/daily-monitoring.json";
+import contact_investigation from "./covid/contact-investigation.json";
 
 export default {
   covid: {
@@ -8,6 +9,9 @@ export default {
     },
     daily_monitoring: {
       "1.0": daily_monitoring,
+    },
+    contact_investigation: {
+      "1.0": contact_investigation,
     },
   },
 };
