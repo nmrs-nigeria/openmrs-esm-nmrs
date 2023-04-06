@@ -20,5 +20,8 @@
   "suspectedCases": "Suspected cases",
   "statusOfContact": "Status of contact",
   "totalCases": "Total cases",
-  "totalDeaths": "Total deaths"
+  "totalDeaths": "Total deaths",
+  "contactIdNumber": "Contact ID number",
+  "prolongedContact": "Prolonged Contact",
+  "typeOfContact": "Type of Contact"
 }
