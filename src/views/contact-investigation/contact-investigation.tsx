@@ -7,7 +7,12 @@ import {
 } from "@ohri/openmrs-esm-ohri-commons-lib";
 import { useTranslation } from "react-i18next";
 import { moduleName } from "../..";
-import { contactInvestigationEncounterType_UUID } from "../../constants";
+import {
+  contactInvestigationEncounterType_UUID,
+  contactNumber_UUID,
+  prolongedContact_UUID,
+  typeOfContact_UUID,
+} from "../../constants";
 
 const ContactInvestigation: React.FC<PatientChartProps> = ({ patientUuid }) => {
   const { t } = useTranslation();
@@ -17,30 +22,23 @@ const ContactInvestigation: React.FC<PatientChartProps> = ({ patientUuid }) => {
     () => [
       {
         key: "days",
-        header: t("days", "Days"),
+        header: t("contact_id_number", "Contact ID number"),
         getValue: (encounter) => {
-          return getObsFromEncounter(encounter, "days");
+          return getObsFromEncounter(encounter, contactNumber_UUID);
         },
       },
       {
         key: "lossOfSmell",
-        header: t("lossOfSmell", "Loss of Sense of Smell"),
+        header: t("prolonged_contact", "Prolonged Contact"),
         getValue: (encounter) => {
-          return getObsFromEncounter(encounter, "", true);
+          return getObsFromEncounter(encounter, prolongedContact_UUID);
         },
       },
       {
         key: "shortnessOfBreath:",
-        header: t("shortnessOfBreath", "Shortness of Breath"),
+        header: t("type_of_contact", "Type of Contact"),
         getValue: (encounter) => {
-          return getObsFromEncounter(encounter, "", true);
-        },
-      },
-      {
-        key: "soreThroat:",
-        header: t("soreThroat", "Sore Throat"),
-        getValue: (encounter) => {
-          return getObsFromEncounter(encounter, "");
+          return getObsFromEncounter(encounter, typeOfContact_UUID);
         },
       },
       {
