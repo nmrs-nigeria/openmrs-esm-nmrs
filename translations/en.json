@@ -21,7 +21,7 @@
   "statusOfContact": "Status of contact",
   "totalCases": "Total cases",
   "totalDeaths": "Total deaths",
-  "contact_id_number": "Contact ID number",
-  "prolonged_contact": "Prolonged Contact",
-  "type_of_contact": "Type of Contact"
+  "contactIdNumber": "Contact ID number",
+  "prolongedContact": "Prolonged Contact",
+  "typeOfContact": "Type of Contact"
 }

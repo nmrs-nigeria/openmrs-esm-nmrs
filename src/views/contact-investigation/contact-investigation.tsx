@@ -22,21 +22,21 @@ const ContactInvestigation: React.FC<PatientChartProps> = ({ patientUuid }) => {
     () => [
       {
         key: "days",
-        header: t("contact_id_number", "Contact ID number"),
+        header: t("contactIdNumber", "Contact ID number"),
         getValue: (encounter) => {
           return getObsFromEncounter(encounter, contactNumber_UUID);
         },
       },
       {
         key: "lossOfSmell",
-        header: t("prolonged_contact", "Prolonged Contact"),
+        header: t("prolongedContact", "Prolonged Contact"),
         getValue: (encounter) => {
           return getObsFromEncounter(encounter, prolongedContact_UUID);
         },
       },
       {
         key: "shortnessOfBreath:",
-        header: t("type_of_contact", "Type of Contact"),
+        header: t("typeOfContact", "Type of Contact"),
         getValue: (encounter) => {
           return getObsFromEncounter(encounter, typeOfContact_UUID);
         },
