@@ -1,4 +1,4 @@
-![NMRS CI](https://github.com/nmrs-nigeria/openmrs-esm-nmrs/workflows/Node.js%20CI/badge.svg)
+![NMRS CI](https://github.com/nmrs-nigeria/openmrs-esm-nmrs/actions/workflows/node.js.yml/badge.svg)
 
 # Nigeria Medical Records System ESM
 
