@@ -68,7 +68,7 @@ const ContactInvestigation: React.FC<PatientChartProps> = ({ patientUuid }) => {
     <EncounterList
       patientUuid={patientUuid}
       encounterUuid={contactInvestigationEncounterType_UUID}
-      form={{ package: "covid", name: "contact_investigation" }}
+      form={{ package: "covid", name: "contactInvestigation" }}
       columns={columns}
       description={title}
       headerTitle={title}
