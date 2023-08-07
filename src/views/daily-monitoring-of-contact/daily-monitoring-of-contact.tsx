@@ -93,7 +93,7 @@ const DailyMonitoringOfContact: React.FC<PatientChartProps> = ({
         ],
       },
     ],
-    []
+    [t]
   );
   return (
     <EncounterList
