@@ -2,7 +2,7 @@
 
 # Nigeria Medical Records System ESM
 
-Nigeria Medical Records System based of OpenMRS 3.x
+Nigeria Medical Records System based on OpenMRS 3.x.
 
 ## Running this code
 
@@ -10,5 +10,9 @@ Nigeria Medical Records System based of OpenMRS 3.x
 yarn  # to install dependencies
 yarn start  # to run the dev server
 ```
+
+## Documentation
+
+Visit the [O3 developer documentation](https://o3-docs.openmrs.org) to learn more about O3.
 
 Once it is running, a browser window should open with the OpenMRS 3.x application.

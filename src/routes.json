@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json.openmrs.org/routes.schema.json",
+  "backendDependencies": {
+    "fhir2": "^1.2.0",
+    "webservices.rest": "^2.2.0"
+  },
+  "pages": [],
+  "extensions": [
+    {
+      "name": "case-investigation",
+      "slot": "ohri-covid-patient-chart-slot",
+      "component": "caseInvestigation",
+      "meta": {
+        "columns": 1,
+        "path": "Case Investigation",
+        "title": "Case Investigation",
+        "slot": "case-investigation-slot"
+      }
+    },
+    {
+      "name": "case-investigation-ext",
+      "slot": "case-investigation-slot",
+      "component": "caseInvestigationDashboardLink"
+    },
+    {
+      "name": "contact-investigation",
+      "slot": "ohri-covid-patient-chart-slot",
+      "component": "contactInvestigationDashboardLink",
+      "meta": {
+        "columns": 1,
+        "path": "Contact Investigation",
+        "title": "Contact Investigation",
+        "slot": "contact-investigation-slot"
+      }
+    },
+    {
+      "name": "contact-investigation-ext",
+      "slot": "contact-investigation-slot",
+      "component": "contactInvestigation"
+    },
+    {
+      "name": "daily-monitoring-of-contact",
+      "slot": "ohri-covid-patient-chart-slot",
+      "component": "dailyContactMonitoring",
+      "meta": {
+        "columns": 1,
+        "path": "Daily Monitoring of Contact",
+        "title": "Daily Monitoring of Contact",
+        "slot": "daily-monitoring-of-contact-slot"
+      }
+    },
+    {
+      "name": "daily-monitoring-of-contact-ext",
+      "slot": "daily-monitoring-of-contact-slot",
+      "component": "dailyContactMonitoringDashboardLink"
+    },
+    {
+      "name": "covid-cases-summary-ext",
+      "slot": "ohri-covid-dashboard-slot",
+      "component": "covidCasesSummaryDashboardLink",
+      "meta": {
+        "name": "covid-cases-summary",
+        "slot": "covid-cases-summary-slot",
+        "config": {
+          "columns": 1,
+          "type": "grid",
+          "programme": "covid-cases-summary",
+          "dashboardTitle": "COVID-19 Cases Summary"
+        },
+        "path": "Cases Summary",
+        "title": "Cases Summary"
+      }
+    },
+    {
+      "name": "covid-cases-summary",
+      "slot": "covid-cases-summary-slot",
+      "component": "covidCasesSummary",
+      "meta": {
+        "name": "covid-cases-summary",
+        "slot": "covid-cases-summary-slot",
+        "config": {
+          "columns": 1,
+          "type": "grid",
+          "programme": "covid-cases-summary",
+          "dashboardTitle": "COVID-19 Cases Summary"
+        },
+        "path": "Cases Summary",
+        "title": "Cases Summary"
+      }
+    },
+    {
+      "name": "covid-cases-summary-home-header-ext",
+      "slot": "covid-cases-summary-home-header-slot",
+      "component": "covidCasesSummaryHomeHeader",
+      "meta": { "title": "Covid Cases Summary" }
+    },
+    {
+      "name": "covid-cases-summary-home-tile-ext",
+      "slot": "covid-cases-summary-home-tiles-slot",
+      "component": "covidCasesSummaryHomeHeader"
+    },
+    {
+      "name": "covid-cases-summary-tabs-ext",
+      "slot": "covid-cases-summary-home-tabs-slot",
+      "component": "covidCasesSummaryTabs"
+    }
+  ]
+}

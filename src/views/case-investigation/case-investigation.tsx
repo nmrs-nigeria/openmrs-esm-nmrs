@@ -92,7 +92,7 @@ const CaseInvestigation: React.FC<PatientChartProps> = ({ patientUuid }) => {
         ],
       },
     ],
-    []
+    [t]
   );
 
   return (
